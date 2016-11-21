@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     
     keyboardTextView *kTextView = [[keyboardTextView alloc] initWithTextViewFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 49, [UIScreen mainScreen].bounds.size.width, 49)];
-    [kTextView setButtonClickedBlock:^(NSString *text) {
+    [kTextView setSendMesButtonClickedBlock:^(NSString *text) {
         UIAlertView *alertV = [[UIAlertView alloc] initWithTitle:@"Tip"
                                                          message:text
                                                         delegate:nil
